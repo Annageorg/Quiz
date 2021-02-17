@@ -3,6 +3,7 @@
 } 
 body{
   /* background-image: url("../pics/superMario.gif"); */
+  /* background-size: cover; */
   animation-name: colorChange;
   animation-duration: 10s;
   animation-iteration-count: infinite;
