@@ -1,9 +1,10 @@
 * {
-    font-family: 'Signika';
+  font-family: 'Signika';
 } 
 body{
-  /* background-image: url("../pics/superMario.gif"); */
-  /* background-size: cover; */
+  /* background-image: url("pics/superMario.gif");
+  background-size: cover; */
+  background-repeat: no-repeat;
   animation-name: colorChange;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -18,7 +19,7 @@ h1{
   font-weight: bolder;
   font-size: xxx-large;
 }
-p{
+.fontSize{
   font-size: large;
 }
 
@@ -33,10 +34,10 @@ p{
   right: 0;
   bottom: 0;
   left: 0;
-  height:400px;
-  width:800px;
+  height:500px;
+  width:900px;
   background-color: rgba(8, 8, 8, 0.95);
-  border-radius: 3px;
+  border-radius: 10px;
 }
 #question1, #question2, #results {
   display:none;

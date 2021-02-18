@@ -1,18 +1,19 @@
-/**
- * hides intro and show question 1
- */
-function startQuiz() {
-    document.getElementById("intro").style.display = "none";
-    document.getElementById("question1").style.display = "inline-block";
+
+  function hideShow(id1, id2){
+    hide(id1);
+    show(id2);
+  }
+  function hide(elementId){
+    let id = elementId.id;
+    document.getElementById(id).style.display = "none";
+  
+  }
+  function show(elementId){
+    let id = elementId.id;
+    document.getElementById(id).style.display = "inline-block";
   }
   
-  /**
-   * hides question 1 shows question2
-   */
-  function question2() {
-    document.getElementById("question1").style.display = "none";
-    document.getElementById("question2").style.display = "inline-block";
-  }
+
   
   /**
    * hides question 2 shows results
