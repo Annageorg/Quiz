@@ -16,7 +16,7 @@
     <body>  
       <div id ="midBox" class="container-fluid">
         <div id="quizArea">
-          <div>
+          <div id="quizTitle">
             <h1>Which Nintendo character are you?</h1>
             <br/>
           </div>
@@ -191,16 +191,19 @@
                   </div>
                   <div class="row"> &nbsp; </div>
                   <div>
-                    <input type="button" value="Next"class="btn btn-success mx-auto" onclick="hideShow(question5, results)"/>
+                    <input type="button" value="Next"class="btn btn-success mx-auto" onclick="hideShow(question5, results) ; calculateResults(); hide(quizTitle)"/>
                   </div>
                 </div>
               </div>
             </form>
             <!--Results-->
-            <div id="results" class="justify-content-center mx-auto hide">
-              <h2 class="text-center">You are:</h2>
-              <div class="row"> &nbsp; </div>
-              <p class="text-center" id="final">alksdja;lskjd</p>
+            <div id="results" class="justify-content-center hide">
+              <h2>You are:</h2>
+              <p class="text-center" id="final"></p>
+              <img id="mario" class="hide" src="pics/mario.png" alt="image of Mario" height="400px" width="25px">
+              <img id="link" class="hide"  src="pics/link.png" alt="image of Link" height="500px" width="450px">
+              <img id="sonic" class="hide" src="pics/sonic.png" alt="image of Sonic" height="400px" width="350px">
+              <img id="kirby" class="hide" src="pics/kirby.png" alt="image of Kirby" height="400px" width="400px">
             </div>  
         </div>
       </div>
