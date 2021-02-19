@@ -35,16 +35,43 @@
             break;
         }
     }
-  
-    let total = Number(q1Value) + Number(q2Value);
-    let result = total / 2;
+
+    const radios3 = document.querySelectorAll('input[name="quest3"]');
+    let q3Value;
+    for (const rb of radios3) {
+        if (rb.checked) {
+            q3Value = rb.value;
+            break;
+        }
+    }
+    const radios4 = document.querySelectorAll('input[name="quest4"]');
+    let q4Value;
+    for (const rb of radios4) {
+        if (rb.checked) {
+            q4Value = rb.value;
+            break;
+        }
+    }
+    const radios5 = document.querySelectorAll('input[name="quest5"]');
+    let q5Value;
+    for (const rb of radios5) {
+        if (rb.checked) {
+            q5Value = rb.value;
+            break;
+        }
+    }
+
+    let total = Number(q1Value) + Number(q2Value)+ Number(q3Value)+ Number(q4Value)+ Number(q5Value);
+    let result = total / 5;
     
-    if (result > 2) {
-      msg = "You answered mostly c you are";
+    if (result > 3.5) {
+      msg = "You answered mostly d";
+    } else if (result >= 2.5) {
+      msg = "You answered mostly c";
     } else if (result >= 1.5) {
-      msg = "You answered mostly b, you may have an auditory learning style";
-    } else {
-      msg = "You answered mostly a, you may have a visual learning style";
+      msg = "You answered mostly b"; 
+    }else {
+      msg = "You answered mostly a";
     }
   
     document.getElementById("result").innerHTML = msg
