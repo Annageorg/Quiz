@@ -1,22 +1,50 @@
+* {
+  font-family: 'Signika';
+} 
 body{
-    text-align: center;
-    }
-    
-    #question1, #question2, #results {
-      display:none;
-      width:750px;
-    }
-    
-    #quizarea
-    {
-      position: absolute;
-      margin: auto;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height:400px;
-      width:800px;
-      background-color: #ccc;
-      border-radius: 3px;
-    }
+  /* background-image: url("pics/superMario.gif");
+  background-size: cover; */
+  background-repeat: no-repeat;
+  animation-name: colorChange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes colorChange {
+  from {background-color: rgb(106, 194, 18);}
+  to {background-color: darkcyan;}
+}
+h1{
+  color: rgb(203, 202, 204);
+  font-weight: bolder;
+  font-size: xxx-large;
+}
+.fontSize{
+  font-size: large;
+}
+
+#midBox{
+  text-align: center;
+  color: azure;
+}    
+#quizArea{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height:500px;
+  width:900px;
+  background-color: rgba(8, 8, 8, 0.95);
+  border-radius: 10px;
+}
+/* input {
+  width: 18px;
+  height: 18px;
+} */
+
+.hide{
+  display:none;
+  width:750px;
+}
