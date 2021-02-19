@@ -70,15 +70,15 @@
     let result = total / 5;
     console.log(result)
     
-    if (result >= 3.5) {
+    if (result >= 2.8) {
       msg = "KIRBY";
       document.getElementById('kirby').style.display = "inline-block";
       console.log(msg)
-    } else if (result >= 2.5) {
+    } else if (result >= 2.6) {
       msg = "SONIC";
       document.getElementById('sonic').style.display = "inline-block";
       console.log(msg)
-    } else if (result >= 1.5) {
+    } else if (result >= 2.4) {
       msg = "LINK";
       document.getElementById('link').style.display = "inline-block"; 
       console.log(msg)

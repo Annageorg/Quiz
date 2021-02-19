@@ -2,7 +2,7 @@
   font-family: 'Signika';
 } 
 body{
-  /* background-image: url("pics/superMario.gif");
+  /* background-image: url('pics/superMario.gif');
   background-size: cover; */
   background-repeat: no-repeat;
   animation-name: colorChange;
