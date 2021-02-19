@@ -1,4 +1,4 @@
-
+// show and hides elements
   function hideShow(id1, id2){
     hide(id1);
     show(id2);
@@ -65,30 +65,52 @@
         }
     }
 
-    let total = Number(q1Value) + Number(q2Value)+ Number(q3Value)+ Number(q4Value)+ Number(q5Value);
-    console.log(total)
-    let result = total / 5;
-    console.log(result)
+    let answers = [Number(q1Value), Number(q2Value), Number(q3Value), Number(q4Value), Number(q5Value)];
+    console.log(answers);
+    answers.sort();
+    console.log(answers);
+
+    let a=0;
+    let b=0;
+    let c=0;
+    let d=0;
+    for (let i=0; i<answers.length; i++){
+      if(answers[i] == 1){
+        a++;        
+      }else if(answers[i]==2){
+        b++;       
+      }else if(answers[i]==3){
+        c++;
+      }else if(answers[i]==4){
+        d++;
+      }
+    }
+    console.log(a)
+    console.log(b)
+    console.log(c)
+    console.log(d)
     
-    if (result >= 2.8) {
+    if (d>a && d>b && d>c) {
       msg = "KIRBY";
       document.getElementById('kirby').style.display = "inline-block";
       console.log(msg)
-    } else if (result >= 2.6) {
+    } else if (c>a && c>b && c>d) {
       msg = "SONIC";
       document.getElementById('sonic').style.display = "inline-block";
       console.log(msg)
-    } else if (result >= 2.4) {
+    } else if (b>a && b>c && b>d) {
       msg = "LINK";
       document.getElementById('link').style.display = "inline-block"; 
       console.log(msg)
-    }else {
+    }else if (a>=b && a>=c && a>=d) {
       msg = "MARIO";
       document.getElementById('mario').style.display = "inline-block";
       console.log(msg)
     }
   
     document.getElementById('final').innerHTML = msg
-  
   }
+
+  
+  
 
