@@ -13,17 +13,6 @@
     document.getElementById(id).style.display = "inline-block";
   }
   
-
-  
-  /**
-   * hides question 2 shows results
-   */
-  function results() {
-    calculateResults()
-    document.getElementById("question2").style.display = "none";
-    document.getElementById("results").style.display = "inline-block";
-  }
-  
   
   /**
    * calculates and displays the results
@@ -48,10 +37,10 @@
     }
   
     let total = Number(q1Value) + Number(q2Value);
-    result = total / 2;
+    let result = total / 2;
     
     if (result > 2) {
-      msg = "You answered mostly c you may have a kinesthetic learning style";
+      msg = "You answered mostly c you are";
     } else if (result >= 1.5) {
       msg = "You answered mostly b, you may have an auditory learning style";
     } else {
