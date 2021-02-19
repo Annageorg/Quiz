@@ -2,8 +2,8 @@
   font-family: 'Signika';
 } 
 body{
-  /* background-image: url("pics/superMario.gif");
-  background-size: cover; */
+  background-image: url("../pics/superMario.gif");
+  background-size: cover;
   background-repeat: no-repeat;
   animation-name: colorChange;
   animation-duration: 10s;
@@ -27,6 +27,7 @@ h1{
   text-align: center;
   color: azure;
 }    
+
 #quizArea{
   position: absolute;
   margin: auto;
@@ -36,13 +37,9 @@ h1{
   left: 0;
   height:500px;
   width:900px;
-  background-color: rgba(8, 8, 8, 0.95);
+  background-color: rgba(0, 0, 0, 0.95);
   border-radius: 10px;
 }
-/* input {
-  width: 18px;
-  height: 18px;
-} */
 
 .hide{
   display:none;

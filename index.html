@@ -16,7 +16,7 @@
     <body>  
       <div id ="midBox" class="container-fluid">
         <div id="quizArea">
-          <div>
+          <div id="quizTitle">
             <h1>Which Nintendo character are you?</h1>
             <br/>
           </div>
@@ -141,20 +141,20 @@
                 <div class="row"> &nbsp; </div>
                 <div class="fontSize" >
                   <div>
-                   <input type="radio" name="quest4" id="a51" value=1>
-                    <label  for="a51">a) Reckless</label>
+                   <input type="radio" name="quest4" id="a41" value=1>
+                    <label  for="a41">a) Reckless</label>
                   </div>
                   <div>
-                    <input type="radio" name="quest4" id="a52" value=2 />
-                    <label for="a52">b) Fearless</label>
+                    <input type="radio" name="quest4" id="a42" value=2 />
+                    <label for="a42">b) Fearless</label>
                  </div>
                   <div>
-                    <input type="radio" name="quest4" id="a53" value=3 />
-                    <label for="a53">c) Energetic</label>
+                    <input type="radio" name="quest4" id="a43" value=3 />
+                    <label for="a43">c) Energetic</label>
                   </div>
                   <div>
-                    <input type="radio" name="quest4" id="a54" value=4  />
-                    <label for="a54">d) Jolly </label>
+                    <input type="radio" name="quest4" id="a44" value=4  />
+                    <label for="a44">d) Jolly </label>
                   </div>
                   <div class="row"> &nbsp; </div>
                   <div>
@@ -174,38 +174,41 @@
                 <div class="row"> &nbsp; </div>
                 <div class="fontSize" >
                   <div>
-                   <input type="radio" name="quest5" id="a1" value=1>
-                    <label  for="a1">a) I'll just remember what I am fighting for </label>
+                   <input type="radio" name="quest5" id="a51" value=1>
+                    <label  for="a51">a) I'll just remember what I am fighting for </label>
                   </div>
                   <div>
-                    <input type="radio" name="quest5" id="a2" value=2 />
-                    <label for="a2">b) I'll use my sword</label>
+                    <input type="radio" name="quest5" id="a52" value=2 />
+                    <label for="a52">b) I'll use my sword</label>
                  </div>
                   <div>
-                    <input type="radio" name="quest5" id="a3" value=3 />
-                    <label for="a3">c) I just need to eat!</label>
+                    <input type="radio" name="quest5" id="a53" value=3 />
+                    <label for="a53">c) I just need to eat!</label>
                   </div>
                   <div>
-                    <input type="radio" name="quest5" id="a4" value=4  />
-                    <label for="a3">d) I can become an excellent sharpshooter</label>
+                    <input type="radio" name="quest5" id="a54" value=4  />
+                    <label for="a54">d) I can become an excellent sharpshooter</label>
                   </div>
                   <div class="row"> &nbsp; </div>
                   <div>
-                    <input type="button" value="Next"class="btn btn-success mx-auto" onclick="hideShow(question5, results)"/>
+                    <input type="button" value="Next"class="btn btn-success mx-auto" onclick="hideShow(question5, results) ; calculateResults(); hide(quizTitle)"/>
                   </div>
                 </div>
               </div>
-                <!--Results-->
-                <div id="results" class="justify-content-center mx-auto hide">
-                  <h2 class="text-center">You are:</h2>
-                  <div class="row"> &nbsp; </div>
-                  <p class="text-center" id="result"></p>
-                  </div>
-            </form>  
+            </form>
+            <!--Results-->
+            <div id="results" class="justify-content-center hide">
+              <h2>You are:</h2>
+              <p class="text-center" id="final"></p>
+              <img id="mario" class="hide" src="pics/mario.png" alt="image of Mario" height="400px" width="25px">
+              <img id="link" class="hide"  src="pics/link.png" alt="image of Link" height="500px" width="450px">
+              <img id="sonic" class="hide" src="pics/sonic.png" alt="image of Sonic" height="400px" width="350px">
+              <img id="kirby" class="hide" src="pics/kirby.png" alt="image of Kirby" height="400px" width="400px">
+            </div>  
         </div>
       </div>
       <!-- Quiz JS -->
-      <script src="index.js"></script>       
+      <script src="index.js" type="text/javascript"></script>       
       <!-- Separate Popper and Bootstrap JS -->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
