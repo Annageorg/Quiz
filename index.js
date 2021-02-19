@@ -92,19 +92,19 @@
     
     if (d>a && d>b && d>c) {
       msg = "KIRBY";
-      document.getElementById('kirby').style.display = "inline-block";
+      show(kirby);
       console.log(msg)
     } else if (c>a && c>b && c>d) {
       msg = "SONIC";
-      document.getElementById('sonic').style.display = "inline-block";
+      show(sonic);
       console.log(msg)
     } else if (b>a && b>c && b>d) {
       msg = "LINK";
-      document.getElementById('link').style.display = "inline-block"; 
+      show(link) 
       console.log(msg)
     }else if (a>=b && a>=c && a>=d) {
       msg = "MARIO";
-      document.getElementById('mario').style.display = "inline-block";
+      show(mario)
       console.log(msg)
     }
   
