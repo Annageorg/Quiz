@@ -74,6 +74,6 @@
       msg = "You answered mostly a";
     }
   
-    document.getElementById("result").innerHTML = msg
+    document.getElementById("final").innerHTML = msg
   
   }
